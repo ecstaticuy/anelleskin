@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>esto es ciencia, no hype — Anelle Skin</title>
+
+  <!--
+    EMAIL: Welcome Series — Correo 2 (+1 día)
+    Asunto: esto es ciencia, no hype
+    Preview: te lo contamos bien
+    CTA: https://anelleskin.com/discount/WELCOME10?redirect=%2Fproducts%2Fanelle-skin-glow-mask
+    Cupón: WelcometoAnelleSkin10
+    Carpeta: anelle-skin/04-PROYECTOS/email-marketing/
+    Última actualización: 2026-03-26
+    PENDIENTE: texto encima de imagen (esperando imagen de inspiración)
+  -->
+
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap');
+
+    /* Reset */
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; }
+    body { margin: 0; padding: 0; width: 100% !important; }
+
+    .preheader { display: none !important; visibility: hidden; opacity: 0; font-size: 1px; height: 0; width: 0; }
+
+    .email-wrapper {
+      background-color: #F7F0EA;
+      width: 100%;
+      padding: 32px 0;
+    }
+
+    .email-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #FFFFFF;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    /* Header */
+    .header {
+      background-color: #FFFFFF;
+      padding: 28px 48px 20px;
+      text-align: center;
+    }
+
+
+    /* Cuerpo */
+    .body-content {
+      padding: 36px 48px 0;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      color: #4A3428;
+    }
+
+    .body-text {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.75;
+      color: #4A3428;
+      margin: 0 0 20px 0;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+    }
+
+    /* Lista de resultados */
+    .result-list {
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      list-style: none;
+      padding: 0;
+      margin: 0 0 10px 0;
+    }
+
+    .result-list li {
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 1.65;
+      color: #5C3B30;
+      padding: 2px 0 2px 18px;
+      position: relative;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+    }
+
+    .result-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #A08070;
+      font-size: 14px;
+      line-height: 1.75;
+    }
+
+    /* Bloque énfasis */
+    .emphasis-block {
+      border-left: 2px solid #5C3B30;
+      padding: 2px 0 2px 20px;
+      margin: 24px 0;
+    }
+
+    .emphasis-block p {
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.65;
+      color: #4A3428;
+      margin: 0;
+    }
+
+    /* Tag científico */
+    .science-tag {
+      background-color: #F7F0EA;
+      border-radius: 2px;
+      padding: 18px 20px;
+      margin: 24px 0;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      color: #7A6358;
+      line-height: 1.6;
+    }
+
+    .science-tag strong {
+      color: #5C3B30;
+      font-weight: 600;
+    }
+
+    /* Botón CTA */
+    .cta-wrap {
+      text-align: center;
+      padding: 28px 48px 36px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #5C3B30;
+      color: #FFFFFF !important;
+      text-decoration: none;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 14px 40px;
+      border-radius: 2px;
+      border: 1px solid #5C3B30;
+      transition: background-color 200ms ease, color 200ms ease;
+    }
+
+    .cta-button:hover {
+      background-color: #FFFFFF !important;
+      color: #5C3B30 !important;
+    }
+
+    /* Firma */
+    .signature {
+      padding: 4px 48px 36px;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+    }
+
+    .signature-text { font-size: 15px; font-weight: 400; line-height: 1.5; color: #4A3428; margin: 0 0 8px 0; }
+
+    .signature-name {
+      font-size: 15px;
+      font-weight: 500;
+      color: #5C3B30;
+      margin: 0 0 2px 0;
+    }
+
+    .signature-role {
+      font-size: 13px;
+      font-weight: 400;
+      color: #A08070;
+      margin: 0;
+    }
+
+    /* Barra descuento (al final) */
+    .discount-bar {
+      background-color: #5C3B30;
+      padding: 14px 48px;
+      text-align: center;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+    }
+
+    .divider {
+      height: 1px;
+      background-color: #EDE6DF;
+      margin: 0 48px;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 24px 48px;
+      text-align: center;
+    }
+
+    .footer-social { margin: 0 0 12px 0; }
+
+    .footer-social a {
+      display: inline-block;
+      margin: 0 8px;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      color: #A08070 !important;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 150ms ease;
+    }
+
+    .footer-social a:hover { color: #5C3B30 !important; }
+
+    .footer-legal {
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 11px;
+      color: #C4B0A4;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .footer-legal a { color: #C4B0A4 !important; text-decoration: underline; }
+
+    /* Mobile */
+    @media only screen and (max-width: 620px) {
+      .email-wrapper    { padding: 0 !important; }
+      .email-container  { border-radius: 0 !important; }
+      .header           { padding: 20px 24px 16px !important; }
+.body-content     { padding: 28px 24px 0 !important; }
+      .cta-wrap         { padding: 24px 24px 28px !important; }
+      .signature        { padding: 4px 24px 28px !important; }
+      .discount-bar     { padding: 14px 24px !important; }
+      .divider          { margin: 0 24px !important; }
+      .footer           { padding: 20px 24px !important; }
+      .pre-hook         { font-size: 19px !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <span class="preheader">te lo contamos bien</span>
+
+  <div class="email-wrapper">
+    <div class="email-container">
+
+      <!-- HEADER — logo -->
+      <div class="header">
+        <a href="https://anelleskin.com/discount/WELCOME10?redirect=%2Fproducts%2Fanelle-skin-glow-mask" target="_blank" style="display:inline-block; line-height:0;">
+          <img
+            src="https://d3k81ch9hvuctc.cloudfront.net/company/YgRV6r/images/476823af-1399-4133-80b9-1e018e58fc8d.png"
+            alt="Anelle Skin"
+            width="330"
+            style="width:330px; height:auto; display:inline-block;"
+          />
+        </a>
+      </div>
+
+      <!-- HERO IMAGE CON TEXTO ENCIMA -->
+      <div style="background-image:url('https://d3k81ch9hvuctc.cloudfront.net/company/YgRV6r/images/19815c4d-0a11-42c1-a5e4-f29a3266a85d.png'); background-size:cover; background-position:center top; width:100%;">
+        <div style="background: linear-gradient(to top, rgba(44,26,14,0.82) 0%, rgba(44,26,14,0.15) 55%, transparent 100%); padding:200px 48px 44px; box-sizing:border-box;">
+          <p style="font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif; font-size:11px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:rgba(247,240,234,0.75); margin:0 0 14px 0;">La ciencia detrás</p>
+          <p style="font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif; font-size:24px; font-weight:500; line-height:1.3; color:#FFFFFF; margin:0 0 14px 0; letter-spacing:-0.01em;">Hay algo importante que merece la pena entender antes de empezar.</p>
+          <p style="font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif; font-size:15px; font-weight:400; line-height:1.6; color:rgba(247,240,234,0.85); margin:0;">La luz roja no es una tendencia nueva.<br />Lleva años utilizándose en clínicas porque tiene un efecto real sobre la piel.</p>
+        </div>
+      </div>
+
+      <!-- CUERPO — desarrollo -->
+      <div class="body-content">
+
+        <p class="body-text" style="margin-top:0;">
+          Cuando usas la Glow Mask, la luz penetra en las capas más profundas y activa la actividad celular.
+          Eso se traduce en algo muy concreto: la piel empieza a producir más colágeno y elastina.
+        </p>
+
+        <p class="body-text">¿Y eso qué significa en el día a día?</p>
+
+        <p class="body-text">
+          Una piel más firme.<br />
+          Más uniforme.<br />
+          Con mejor textura.
+        </p>
+
+        <p class="body-text">No es inmediato. Y no debería serlo.</p>
+
+        <p class="body-text">
+          Al principio notarás la piel más luminosa, más hidratada.
+          Y con el paso de las semanas es cuando empieza a verse el cambio de verdad.
+        </p>
+
+        <div class="emphasis-block">
+          <p>Por eso insistimos tanto en lo mismo: no va de usarla un día, va de mantenerla en tu rutina.</p>
+        </div>
+
+        <div class="science-tag">
+          Esto tiene nombre: <strong>fotobiomodulación</strong>. Y años de investigación detrás.<br />
+          Pero lo importante no es cómo se llama, sino que funciona cuando eres constante.
+        </div>
+
+        <p class="body-text">
+          Mañana te cuento cómo usarla para que ese proceso juegue a tu favor.
+        </p>
+
+      </div>
+
+      <!-- BOTÓN CTA -->
+      <div class="cta-wrap">
+        <a href="https://anelleskin.com/discount/WELCOME10?redirect=%2Fproducts%2Fanelle-skin-glow-mask" class="cta-button" target="_blank">
+          Empieza ahora
+        </a>
+      </div>
+
+      <!-- FIRMA -->
+      <div class="signature">
+        <p class="signature-text">Con cariño,</p>
+        <p class="signature-name">Irene M.</p>
+        <p class="signature-role">Founder · Anelle Skin</p>
+      </div>
+
+      <!-- BARRA DESCUENTO — al final -->
+      <div class="discount-bar">
+        <span style="font-size:12px; font-weight:400; color:#F7F0EA; letter-spacing:0.02em; font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif;">Tu -10% sigue aquí esperándote: <strong style="color:#FFFFFF; font-weight:600;">WELCOME10</strong></span><br />
+        <a href="https://anelleskin.com/discount/WELCOME10?redirect=%2Fproducts%2Fanelle-skin-glow-mask" target="_blank" style="font-size:12px; font-weight:500; color:#F7F0EA; text-decoration:underline; font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif;">Comprar Ahora</a>
+      </div>
+
+      <!-- DIVISOR -->
+      <div class="divider"></div>
+
+      <!-- FOOTER -->
+      <div class="footer">
+        <div class="footer-social">
+          <a href="https://www.instagram.com/anelleskin" target="_blank">Instagram</a>
+          <a href="https://www.tiktok.com/@anelleskin" target="_blank">TikTok</a>
+        </div>
+        <p class="footer-legal">
+          Has recibido este correo porque te suscribiste en anelleskin.com.<br />
+          <a href="{{ unsubscribe_url }}" target="_blank">Cancelar suscripción</a> &nbsp;·&nbsp;
+          <a href="{{ view_in_browser_url }}" target="_blank">Ver en el navegador</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

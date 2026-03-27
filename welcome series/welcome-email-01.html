@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Esto acaba de empezar 🤎 — Anelle Skin</title>
+
+  <!--
+    EMAIL: Welcome Series — Correo 1
+    Asunto: Esto acaba de empezar 🤎
+    Preview: tu código está aquí, pero espera un segundo…
+    CTA: https://anelleskin.com/discount/WELCOME10?redirect=%2Fproducts%2Fanelle-skin-glow-mask
+    Cupón: WelcometoAnelleSkin10
+    Carpeta: anelle-skin/04-PROYECTOS/email-marketing/
+    Última actualización: 2026-03-26
+  -->
+
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap');
+
+    /* Reset */
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; }
+    body { margin: 0; padding: 0; width: 100% !important; }
+
+    /* Preheader oculto */
+    .preheader { display: none !important; visibility: hidden; opacity: 0; font-size: 1px; height: 0; width: 0; }
+
+    /* Wrapper */
+    .email-wrapper {
+      background-color: #F7F0EA;
+      width: 100%;
+      padding: 32px 0;
+    }
+
+    .email-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #FFFFFF;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    /* Header — logo */
+    .header {
+      background-color: #FFFFFF;
+      padding: 28px 48px 20px;
+      text-align: center;
+    }
+
+
+    /* Cuerpo */
+    .body-content {
+      padding: 36px 48px 0;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      color: #2C1A0E;
+    }
+
+    .greeting {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #2C1A0E;
+      margin: 0 0 4px 0;
+    }
+
+    .intro-headline {
+      font-size: 21px;
+      font-weight: 500;
+      line-height: 1.3;
+      color: #2C1A0E;
+      margin: 0 0 18px 0;
+      letter-spacing: -0.01em;
+    }
+
+    .body-text {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.65;
+      color: #4A3428;
+      margin: 0 0 10px 0;
+    }
+
+    /* Lista de beneficios — puntos redondos */
+    .benefit-list {
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.65;
+      color: #4A3428;
+      margin: 0 0 10px 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .benefit-list li {
+      padding: 2px 0 2px 18px;
+      position: relative;
+    }
+
+    .benefit-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #5C3B30;
+      font-size: 14px;
+      line-height: 1.75;
+    }
+
+    /* Bloque énfasis */
+    .emphasis-block {
+      border-left: 2px solid #5C3B30;
+      padding: 2px 0 2px 20px;
+      margin: 16px 0;
+    }
+
+    .emphasis-block p {
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.65;
+      color: #2C1A0E;
+      margin: 0;
+    }
+
+    /* Sección dos columnas: imagen izq + texto der */
+    .two-col-table { width: 100%; border-collapse: collapse; }
+
+    .col-image {
+      width: 220px;
+      vertical-align: top;
+      padding: 0;
+    }
+
+    .col-image img {
+      width: 220px;
+      height: auto;
+      display: block;
+      border-radius: 4px;
+    }
+
+    .col-text {
+      vertical-align: top;
+      padding: 4px 0 0 24px;
+    }
+
+    /* Código de descuento */
+    .code-section {
+      background-color: #F7F0EA;
+      border-radius: 4px;
+      padding: 28px 36px;
+      margin: 28px 0 0;
+      text-align: center;
+    }
+
+    .code-label {
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #A08070;
+      margin: 0 0 10px 0;
+    }
+
+    .code-value {
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      color: #5C3B30;
+      margin: 0 0 16px 0;
+    }
+
+    /* Botón CTA con efecto hover */
+    .cta-button {
+      display: inline-block;
+      background-color: #5C3B30;
+      color: #FFFFFF !important;
+      text-decoration: none;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 13px 36px;
+      border-radius: 2px;
+      border: 1px solid #5C3B30;
+      transition: background-color 200ms ease, color 200ms ease;
+    }
+
+    .cta-button:hover {
+      background-color: #FFFFFF !important;
+      color: #5C3B30 !important;
+    }
+
+    /* Firma */
+    .signature {
+      padding: 28px 48px 40px;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+    }
+
+    .signature-text {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #4A3428;
+      margin: 0 0 8px 0;
+    }
+
+    .signature-name {
+      font-size: 15px;
+      font-weight: 500;
+      color: #2C1A0E;
+      margin: 0 0 2px 0;
+    }
+
+    .signature-role {
+      font-size: 13px;
+      font-weight: 400;
+      color: #A08070;
+      margin: 0;
+    }
+
+    /* Divisor */
+    .divider {
+      height: 1px;
+      background-color: #EDE6DF;
+      margin: 0 48px;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 24px 48px;
+      text-align: center;
+    }
+
+    .footer-social { margin: 0 0 12px 0; }
+
+    .footer-social a {
+      display: inline-block;
+      margin: 0 8px;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      color: #A08070 !important;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 150ms ease;
+    }
+
+    .footer-social a:hover { color: #5C3B30 !important; }
+
+    .footer-legal {
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 11px;
+      color: #C4B0A4;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .footer-legal a { color: #C4B0A4 !important; text-decoration: underline; }
+
+    /* Mobile */
+    @media only screen and (max-width: 620px) {
+      .email-wrapper   { padding: 0 !important; }
+      .email-container { border-radius: 0 !important; }
+      .header          { padding: 20px 24px 16px !important; }
+      .navbar          { padding: 8px 16px !important; }
+      .navbar a        { margin: 0 8px !important; font-size: 10px !important; }
+      .body-content    { padding: 28px 24px 0 !important; }
+      .two-col-table,
+      .two-col-table tbody,
+      .two-col-table tr { display: block !important; width: 100% !important; }
+      .col-image       { display: block !important; width: 100% !important; padding: 0 0 16px 0 !important; }
+      .col-image img   { width: 100% !important; }
+      .col-text        { display: block !important; width: 100% !important; padding: 0 !important; }
+      .code-section    { padding: 24px 16px !important; margin: 20px 0 0 !important; }
+      .signature       { padding: 24px 24px 32px !important; }
+      .divider         { margin: 0 24px !important; }
+      .footer          { padding: 20px 24px !important; }
+      .intro-headline  { font-size: 19px !important; }
+      .code-value      { font-size: 19px !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Preheader oculto -->
+  <span class="preheader">tu código está aquí, pero espera un segundo…</span>
+
+  <div class="email-wrapper">
+    <div class="email-container">
+
+      <!-- HEADER — logo -->
+      <div class="header">
+        <a href="https://anelleskin.com/discount/WELCOME10?redirect=%2Fproducts%2Fanelle-skin-glow-mask" target="_blank" style="display:inline-block; line-height:0;">
+          <img
+            src="https://d3k81ch9hvuctc.cloudfront.net/company/YgRV6r/images/476823af-1399-4133-80b9-1e018e58fc8d.png"
+            alt="Anelle Skin"
+            width="330"
+            style="width:330px; height:auto; display:inline-block;"
+          />
+        </a>
+      </div>
+
+      <!-- BARRA DESCUENTO -->
+      <div style="background-color:#5C3B30; padding:14px 48px; text-align:center; font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif;">
+        <span style="font-size:12px; font-weight:400; color:#F7F0EA; letter-spacing:0.02em;">Este es tu -10% de bienvenida: <strong style="color:#FFFFFF; font-weight:600;">WELCOME10</strong></span><br /><a href="https://anelleskin.com/discount/WELCOME10?redirect=%2Fproducts%2Fanelle-skin-glow-mask" target="_blank" style="font-size:12px; font-weight:500; color:#F7F0EA; text-decoration:underline; font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif;">Comprar Ahora</a>
+      </div>
+
+      <!-- HERO IMAGE — banner principal -->
+      <div style="width:100%; line-height:0; font-size:0;">
+        <img
+          src="https://d3k81ch9hvuctc.cloudfront.net/company/YgRV6r/images/19815c4d-0a11-42c1-a5e4-f29a3266a85d.png"
+          alt="Anelle Skin — Glow Mask"
+          width="600"
+          style="width:100%; max-width:600px; height:auto; display:block;"
+        />
+      </div>
+
+      <!-- CUERPO — bloque 1 -->
+      <div class="body-content">
+        <p class="intro-headline">Bienvenida a Anelle Skin. 🤎</p>
+        <p class="body-text">
+          No te vamos a prometer una piel perfecta en 7 días.<br />
+          Ni milagros. Ni fórmulas mágicas.
+        </p>
+        <p class="body-text">
+          Pero sí algo mejor: una rutina que puedes mantener de verdad.
+        </p>
+      </div>
+
+      <!-- DOS COLUMNAS: imagen izquierda + texto derecha -->
+      <div style="padding: 24px 48px 0; box-sizing:border-box;">
+        <table class="two-col-table" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <!-- Imagen producto izquierda -->
+            <td class="col-image">
+              <img
+                src="https://d3k81ch9hvuctc.cloudfront.net/company/YgRV6r/images/f02c51e9-6911-4302-ac04-3a8216aa4b73.jpeg"
+                alt="Glow Mask — Anelle Skin"
+              />
+            </td>
+            <!-- Texto derecha -->
+            <td class="col-text" style="font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif;">
+              <p style="font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif; font-size:15px; font-weight:400; line-height:1.65; color:#4A3428; margin:0 0 10px 0;">Aquí es donde empieza lo interesante.</p>
+              <p style="font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif; font-size:15px; font-weight:400; line-height:1.65; color:#4A3428; margin:0 0 10px 0;">
+                La Glow Mask es tecnología LED que lleva años usándose en clínicas,
+                pero pensada para que tú la uses en casa, sin complicarte la vida.
+              </p>
+              <p style="font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif; font-size:15px; font-weight:400; line-height:1.8; color:#4A3428; margin:0;">
+                Mientras scrolleas en Instagram.<br />
+                Mientras respondes mensajes.<br />
+                Mientras ves una serie.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- CUERPO — bloque 2 -->
+      <div class="body-content">
+        <p class="body-text">
+          No tienes que parar tu día para cuidarte la piel.<br />
+          La idea es justo la contraria.
+        </p>
+        <div class="emphasis-block">
+          <p>Que lo integres.</p>
+          <p>Que lo mantengas.</p>
+          <p>Que funcione.</p>
+        </div>
+        <p class="body-text">Porque forma parte de tu vida, no porque te obligas.</p>
+        <p class="body-text">
+          No necesitas hacerlo perfecto.<br />
+          Solo hacerlo constante.
+        </p>
+      </div>
+
+      <!-- CÓDIGO DE BIENVENIDA -->
+      <div style="padding: 0 48px;">
+        <div class="code-section">
+          <p class="code-label">Tu código de bienvenida</p>
+          <p class="code-value">WELCOME10</p>
+          <a href="https://anelleskin.com/discount/WELCOME10?redirect=%2Fproducts%2Fanelle-skin-glow-mask" class="cta-button" target="_blank">
+            Este es tu momento ✨
+          </a>
+        </div>
+      </div>
+
+      <!-- FIRMA -->
+      <div class="signature">
+        <p class="signature-text">Con cariño,</p>
+        <p class="signature-name">Irene M.</p>
+        <p class="signature-role">Founder · Anelle Skin</p>
+      </div>
+
+      <!-- DIVISOR -->
+      <div class="divider"></div>
+
+      <!-- FOOTER -->
+      <div class="footer">
+        <div class="footer-social">
+          <a href="https://www.instagram.com/anelleskin" target="_blank">Instagram</a>
+          <a href="https://www.tiktok.com/@anelleskin" target="_blank">TikTok</a>
+        </div>
+        <p class="footer-legal">
+          Has recibido este correo porque te suscribiste en anelleskin.com.<br />
+          <a href="{{ unsubscribe_url }}" target="_blank">Cancelar suscripción</a> &nbsp;·&nbsp;
+          <a href="{{ view_in_browser_url }}" target="_blank">Ver en el navegador</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>cómo usar la Glow Mask (sin complicarte) — Anelle Skin</title>
+
+  <!--
+    EMAIL: Welcome Series — Correo 3 (+2 días)
+    Asunto: cómo usar la Glow Mask (sin complicarte)
+    Preview: empieza por aquí
+    CTA: https://anelleskin.com/discount/WELCOME10?redirect=%2Fproducts%2Fanelle-skin-glow-mask
+    Carpeta: anelle-skin/04-PROYECTOS/email-marketing/
+    Última actualización: 2026-03-26
+  -->
+
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap');
+
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; }
+    body { margin: 0; padding: 0; width: 100% !important; }
+
+    .preheader { display: none !important; visibility: hidden; opacity: 0; font-size: 1px; height: 0; width: 0; }
+
+    .email-wrapper { background-color: #F7F0EA; width: 100%; padding: 32px 0; }
+
+    .email-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #FFFFFF;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    /* Header */
+    .header { background-color: #FFFFFF; padding: 28px 48px 20px; text-align: center; }
+
+    /* Sección intro — gran tipografía */
+    .intro-section {
+      padding: 44px 48px 36px;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+    }
+
+    .intro-label {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #A08070;
+      margin: 0 0 16px 0;
+    }
+
+    .intro-title {
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 1.2;
+      color: #5C3B30;
+      margin: 0 0 6px 0;
+      letter-spacing: -0.02em;
+    }
+
+    .intro-title span {
+      color: #C4A898;
+    }
+
+    .intro-sub {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.55;
+      color: #7A6358;
+      margin: 16px 0 0 0;
+    }
+
+    /* Bloque patch test */
+    .patch-block {
+      margin: 0 48px 36px;
+      background-color: #F7F0EA;
+      border-radius: 4px;
+      padding: 24px 28px;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+    }
+
+    .patch-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #A08070;
+      margin: 0 0 12px 0;
+    }
+
+    .patch-step {
+      display: flex;
+      align-items: baseline;
+      margin: 0 0 6px 0;
+    }
+
+    .patch-num {
+      font-size: 11px;
+      font-weight: 600;
+      color: #5C3B30;
+      letter-spacing: 0.08em;
+      min-width: 20px;
+    }
+
+    .patch-text {
+      font-size: 14px;
+      font-weight: 400;
+      color: #4A3428;
+      line-height: 1.5;
+    }
+
+    /* Timeline de semanas */
+    .timeline { padding: 0 48px 8px; }
+
+    .week-block {
+      margin-bottom: 6px;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+    }
+
+    .week-header {
+      display: table;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .week-num {
+      display: table-cell;
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 1;
+      letter-spacing: -0.03em;
+      vertical-align: middle;
+      width: 70px;
+      color: #EDE0D6;
+    }
+
+    .week-info {
+      display: table-cell;
+      vertical-align: middle;
+      padding-left: 12px;
+      border-left: 2px solid #EDE0D6;
+    }
+
+    .week-title {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #5C3B30;
+      margin: 0 0 4px 0;
+    }
+
+    .week-content {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.65;
+      color: #4A3428;
+      margin: 0;
+    }
+
+    .week-content strong {
+      color: #5C3B30;
+      font-weight: 600;
+    }
+
+    /* Semana activa — la más importante */
+    .week-block.featured .week-num { color: #5C3B30; }
+    .week-block.featured .week-info { border-left-color: #5C3B30; }
+
+    /* Divisor timeline */
+    .timeline-connector {
+      width: 2px;
+      height: 16px;
+      background-color: #EDE0D6;
+      margin: 0 0 0 34px;
+    }
+
+    /* Antes / Después */
+    .usage-section {
+      margin: 32px 48px 0;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+    }
+
+    .usage-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #A08070;
+      margin: 0 0 16px 0;
+    }
+
+    .usage-table { width: 100%; border-collapse: separate; border-spacing: 10px 0; }
+
+    .usage-col {
+      width: 50%;
+      background-color: #F7F0EA;
+      border-radius: 4px;
+      padding: 20px 20px;
+      vertical-align: top;
+    }
+
+    .usage-col-title {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #5C3B30;
+      margin: 0 0 8px 0;
+    }
+
+    .usage-col-text {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.6;
+      color: #4A3428;
+      margin: 0;
+    }
+
+    /* Bloque cierre */
+    .closing-section {
+      padding: 32px 48px 0;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+    }
+
+    .closing-text {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.65;
+      color: #4A3428;
+      margin: 0 0 8px 0;
+    }
+
+    .closing-emphasis {
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 1.5;
+      color: #5C3B30;
+      margin: 16px 0 0 0;
+    }
+
+    /* CTA */
+    .cta-wrap { text-align: center; padding: 32px 48px 36px; }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #5C3B30;
+      color: #FFFFFF !important;
+      text-decoration: none;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 14px 40px;
+      border-radius: 2px;
+      border: 1px solid #5C3B30;
+      transition: background-color 200ms ease, color 200ms ease;
+    }
+
+    .cta-button:hover {
+      background-color: #FFFFFF !important;
+      color: #5C3B30 !important;
+    }
+
+    /* Firma */
+    .signature {
+      padding: 0 48px 36px;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+    }
+
+    .signature-name { font-size: 15px; font-weight: 500; color: #5C3B30; margin: 0 0 2px 0; }
+    .signature-role { font-size: 13px; font-weight: 400; color: #A08070; margin: 0; }
+
+    .divider { height: 1px; background-color: #EDE6DF; margin: 0 48px; }
+
+    /* Footer */
+    .footer { padding: 24px 48px; text-align: center; }
+    .footer-social { margin: 0 0 12px 0; }
+
+    .footer-social a {
+      display: inline-block;
+      margin: 0 8px;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      color: #A08070 !important;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 150ms ease;
+    }
+
+    .footer-social a:hover { color: #5C3B30 !important; }
+
+    .footer-legal {
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 11px;
+      color: #C4B0A4;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .footer-legal a { color: #C4B0A4 !important; text-decoration: underline; }
+
+    /* Mobile */
+    @media only screen and (max-width: 620px) {
+      .email-wrapper    { padding: 0 !important; }
+      .email-container  { border-radius: 0 !important; }
+      .header           { padding: 20px 24px 16px !important; }
+      .intro-section    { padding: 32px 24px 28px !important; }
+      .intro-title      { font-size: 22px !important; }
+      .patch-block      { margin: 0 24px 28px !important; }
+      .timeline         { padding: 0 24px 8px !important; }
+      .usage-section    { margin: 28px 24px 0 !important; }
+      .usage-table,
+      .usage-table tbody,
+      .usage-table tr   { display: block !important; width: 100% !important; }
+      .usage-col        { display: block !important; width: 100% !important; margin-bottom: 8px; box-sizing:border-box; }
+      .closing-section  { padding: 24px 24px 0 !important; }
+      .cta-wrap         { padding: 28px 24px 32px !important; }
+      .signature        { padding: 0 24px 28px !important; }
+      .divider          { margin: 0 24px !important; }
+      .footer           { padding: 20px 24px !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <span class="preheader">empieza por aquí</span>
+
+  <div class="email-wrapper">
+    <div class="email-container">
+
+      <!-- HEADER — logo -->
+      <div class="header">
+        <a href="https://anelleskin.com/discount/WELCOME10?redirect=%2Fproducts%2Fanelle-skin-glow-mask" target="_blank" style="display:inline-block; line-height:0;">
+          <img
+            src="https://d3k81ch9hvuctc.cloudfront.net/company/YgRV6r/images/476823af-1399-4133-80b9-1e018e58fc8d.png"
+            alt="Anelle Skin"
+            width="330"
+            style="width:330px; height:auto; display:inline-block;"
+          />
+        </a>
+      </div>
+
+      <!-- HERO IMAGE CON TEXTO ENCIMA -->
+      <div style="background-image:url('https://d3k81ch9hvuctc.cloudfront.net/company/YgRV6r/images/19815c4d-0a11-42c1-a5e4-f29a3266a85d.png'); background-size:cover; background-position:center top; width:100%;">
+        <div style="background:linear-gradient(to top, rgba(44,26,14,0.82) 0%, rgba(44,26,14,0.15) 55%, transparent 100%); padding:200px 48px 44px; box-sizing:border-box;">
+          <p style="font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif; font-size:11px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:rgba(247,240,234,0.75); margin:0 0 14px 0;">Guía de uso</p>
+          <p style="font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif; font-size:24px; font-weight:500; line-height:1.3; color:#FFFFFF; margin:0 0 10px 0; letter-spacing:-0.01em;">cómo usar la Glow Mask<br /><em style="font-style:normal; color:rgba(247,240,234,0.75);">(sin complicarte)</em></p>
+        </div>
+      </div>
+
+      <!-- INTRO -->
+      <div class="intro-section">
+        <p class="intro-label">Antes de empezar</p>
+        <p class="intro-title">No es complicado.<br /><span>Pero sí requiere constancia.</span></p>
+        <p class="intro-sub">Hay algo importante que queremos que tengas claro desde el principio.</p>
+      </div>
+
+      <!-- PATCH TEST -->
+      <div class="patch-block">
+        <p class="patch-label">Paso previo — prueba de parche</p>
+        <table cellpadding="0" cellspacing="0" border="0" style="width:100%;">
+          <tr>
+            <td style="padding:8px 12px 8px 0; vertical-align:middle; width:28px; font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif; font-size:11px; font-weight:600; color:#5C3B30; letter-spacing:0.08em;">01</td>
+            <td style="padding:8px 0; font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif; font-size:14px; color:#4A3428; line-height:1.5;">Prueba la máscara en el brazo durante <strong style="color:#5C3B30;">5 minutos.</strong></td>
+          </tr>
+          <tr>
+            <td style="padding:8px 12px 8px 0; vertical-align:middle; width:28px; font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif; font-size:11px; font-weight:600; color:#5C3B30; letter-spacing:0.08em;">02</td>
+            <td style="padding:8px 0; font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif; font-size:14px; color:#4A3428; line-height:1.5;">Espera <strong style="color:#5C3B30;">24 horas</strong> y observa cómo responde tu piel.</td>
+          </tr>
+          <tr>
+            <td style="padding:8px 12px 8px 0; vertical-align:middle; width:28px; font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif; font-size:11px; font-weight:600; color:#5C3B30; letter-spacing:0.08em;">03</td>
+            <td style="padding:8px 0; font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif; font-size:14px; color:#4A3428; line-height:1.5;">Si todo va bien, empieza lo bueno.</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- TIMELINE SEMANAS -->
+      <div class="timeline">
+
+        <!-- Semana 1 -->
+        <div class="week-block">
+          <table cellpadding="0" cellspacing="0" border="0" style="width:100%;">
+            <tr>
+              <td style="width:64px; vertical-align:middle; font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif; font-size:52px; font-weight:600; line-height:1; letter-spacing:-0.03em; color:#EDE0D6; padding-right:16px;">01</td>
+              <td style="vertical-align:middle; border-left:2px solid #EDE0D6; padding-left:16px;">
+                <p style="font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#5C3B30; margin:0 0 6px 0;">Primera semana — adaptación</p>
+                <p style="font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif; font-size:14px; font-weight:400; line-height:1.65; color:#4A3428; margin:0;">Empieza con <strong style="color:#5C3B30;">5 minutos</strong> los primeros días. Después puedes subir a 10. La idea no es hacerlo perfecto, es que tu piel se acostumbre.</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Conector -->
+        <div style="width:2px; height:14px; background-color:#EDE0D6; margin:8px 0 8px 31px;"></div>
+
+        <!-- Semana 2 -->
+        <div class="week-block">
+          <table cellpadding="0" cellspacing="0" border="0" style="width:100%;">
+            <tr>
+              <td style="width:64px; vertical-align:middle; font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif; font-size:52px; font-weight:600; line-height:1; letter-spacing:-0.03em; color:#C4A898; padding-right:16px;">02</td>
+              <td style="vertical-align:middle; border-left:2px solid #C4A898; padding-left:16px;">
+                <p style="font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#5C3B30; margin:0 0 6px 0;">Segunda semana — ir cogiendo ritmo</p>
+                <p style="font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif; font-size:14px; font-weight:400; line-height:1.65; color:#4A3428; margin:0;">Sube a <strong style="color:#5C3B30;">15–20 minutos</strong>, según cómo te sientas. Si un día notas la piel más sensible, bajas. Sin presión.</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Conector -->
+        <div style="width:2px; height:14px; background-color:#C4A898; margin:8px 0 8px 31px;"></div>
+
+        <!-- Semanas 3-4 — destacada -->
+        <div class="week-block featured">
+          <table cellpadding="0" cellspacing="0" border="0" style="width:100%; background-color:#FAF3EF; border-radius:4px;">
+            <tr>
+              <td style="width:64px; vertical-align:middle; font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif; font-size:52px; font-weight:600; line-height:1; letter-spacing:-0.03em; color:#5C3B30; padding:16px 16px 16px 0;">03</td>
+              <td style="vertical-align:middle; border-left:2px solid #5C3B30; padding:16px 16px 16px 16px;">
+                <p style="font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif; font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#5C3B30; margin:0 0 6px 0;">Semana 3 y 4 — aquí pasa lo importante</p>
+                <p style="font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif; font-size:14px; font-weight:400; line-height:1.65; color:#4A3428; margin:0;"><strong style="color:#5C3B30;">20 minutos. Constancia. No hay más.</strong><br />Es en este punto donde empiezas a notar el cambio real.</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+      </div>
+
+      <!-- ANTES / DESPUÉS -->
+      <div class="usage-section">
+        <p class="usage-label">Dos cosas clave que marcan la diferencia</p>
+        <table class="usage-table" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="usage-col" style="font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif;">
+              <p class="usage-col-title" style="font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif;">Antes</p>
+              <p class="usage-col-text" style="font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif;">Piel limpia, sin productos.</p>
+            </td>
+            <td style="width:12px;"></td>
+            <td class="usage-col" style="font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif;">
+              <p class="usage-col-title" style="font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif;">Después</p>
+              <p class="usage-col-text" style="font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif;">Continúa con tu rutina de skincare habitual. La piel está más receptiva y todo funciona mejor.</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- CIERRE -->
+      <div class="closing-section">
+        <p class="closing-text">No necesitas más. Ni una rutina imposible. Ni hacerlo perfecto cada día.</p>
+        <p class="closing-emphasis">Solo encontrar tu momento<br />y repetirlo.</p>
+      </div>
+
+      <!-- CTA -->
+      <div class="cta-wrap">
+        <a href="https://anelleskin.com/discount/WELCOME10?redirect=%2Fproducts%2Fanelle-skin-glow-mask" class="cta-button" target="_blank">
+          Ver la Glow Mask
+        </a>
+      </div>
+
+      <!-- FIRMA -->
+      <div class="signature">
+        <p class="signature-text">Con cariño,</p>
+        <p class="signature-name">Irene M.</p>
+        <p class="signature-role">Founder · Anelle Skin</p>
+      </div>
+
+      <!-- BARRA DESCUENTO — al final -->
+      <div style="background-color:#5C3B30; padding:14px 48px; text-align:center; font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif;">
+        <span style="font-size:12px; font-weight:400; color:#F7F0EA; letter-spacing:0.02em; font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif;">Tu -10% sigue aquí esperándote: <strong style="color:#FFFFFF; font-weight:600;">WELCOME10</strong></span><br />
+        <a href="https://anelleskin.com/discount/WELCOME10?redirect=%2Fproducts%2Fanelle-skin-glow-mask" target="_blank" style="font-size:12px; font-weight:500; color:#F7F0EA; text-decoration:underline; font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif;">Comprar Ahora</a>
+      </div>
+
+      <!-- DIVISOR -->
+      <div class="divider"></div>
+
+      <!-- FOOTER -->
+      <div class="footer">
+        <div class="footer-social">
+          <a href="https://www.instagram.com/anelleskin" target="_blank">Instagram</a>
+          <a href="https://www.tiktok.com/@anelleskin" target="_blank">TikTok</a>
+        </div>
+        <p class="footer-legal">
+          Has recibido este correo porque te suscribiste en anelleskin.com.<br />
+          <a href="{{ unsubscribe_url }}" target="_blank">Cancelar suscripción</a> &nbsp;·&nbsp;
+          <a href="{{ view_in_browser_url }}" target="_blank">Ver en el navegador</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>no es la foto, es cómo lo notas — Anelle Skin</title>
+
+  <!--
+    EMAIL: Welcome Series — Correo 4 (+3 días)
+    Asunto: no es la foto, es cómo lo notas
+    Preview: lo que pasa a las 4 semanas
+    CTA: https://anelleskin.com/discount/WELCOME10?redirect=%2Fproducts%2Fanelle-skin-glow-mask
+    Carpeta: anelle-skin/04-PROYECTOS/email-marketing/
+    Última actualización: 2026-03-26
+  -->
+
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
+
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; }
+    body { margin: 0; padding: 0; width: 100% !important; }
+
+    .preheader { display: none !important; visibility: hidden; opacity: 0; font-size: 1px; height: 0; width: 0; }
+
+    .email-wrapper { background-color: #F7F0EA; width: 100%; padding: 32px 0; }
+
+    .email-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #FFFFFF;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    /* Header */
+    .header { background-color: #FFFFFF; padding: 28px 48px 20px; text-align: center; }
+
+    /* Intro — tono íntimo */
+    .intro-section {
+      padding: 44px 48px 36px;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+    }
+
+    .intro-label {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #A08070;
+      margin: 0 0 20px 0;
+    }
+
+    .intro-text {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.7;
+      color: #4A3428;
+      margin: 0 0 10px 0;
+    }
+
+    .intro-text em {
+      font-style: italic;
+      color: #7A6358;
+    }
+
+    /* BLOQUE CITA — full-width marrón, el momento central del email */
+    .quote-block {
+      background-color: #5C3B30;
+      padding: 48px 48px;
+      text-align: left;
+    }
+
+    .quote-mark {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 64px;
+      line-height: 0.6;
+      color: rgba(247,240,234,0.25);
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .quote-text {
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 1.45;
+      color: #F7F0EA;
+      margin: 0 0 20px 0;
+      letter-spacing: -0.01em;
+    }
+
+    .quote-text strong {
+      font-weight: 600;
+      color: #FFFFFF;
+    }
+
+    .quote-sub {
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(247,240,234,0.55);
+      margin: 0;
+    }
+
+    /* Sección emocional — lo que pasa dentro */
+    .emotional-section {
+      padding: 44px 48px 0;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+    }
+
+    .emotional-text {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.7;
+      color: #4A3428;
+      margin: 0 0 10px 0;
+    }
+
+    .emotional-highlight {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.7;
+      color: #7A6358;
+      margin: 0 0 10px 0;
+      font-style: italic;
+    }
+
+    /* LAS TRES PALABRAS — tipografía grande, centrada */
+    .three-words {
+      padding: 40px 48px;
+      text-align: center;
+      border-top: 1px solid #EDE6DF;
+      border-bottom: 1px solid #EDE6DF;
+      margin: 32px 0;
+    }
+
+    .three-words-label {
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #C4B0A4;
+      margin: 0 0 20px 0;
+    }
+
+    .word-line {
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin: 0;
+    }
+
+    .word-line.w1 { color: #C4A898; }
+    .word-line.w2 { color: #8C6358; }
+    .word-line.w3 { color: #5C3B30; }
+
+    .word-dot {
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      background-color: #C4A898;
+      border-radius: 50%;
+      margin: 8px auto;
+    }
+
+    /* Momentos de integración */
+    .moments-section {
+      padding: 0 48px 36px;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+    }
+
+    .moments-intro {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.7;
+      color: #4A3428;
+      margin: 0 0 20px 0;
+    }
+
+    .moment-item {
+      display: table;
+      width: 100%;
+      margin-bottom: 8px;
+    }
+
+    .moment-dash {
+      display: table-cell;
+      width: 20px;
+      font-size: 15px;
+      color: #A08070;
+      vertical-align: top;
+      padding-top: 1px;
+    }
+
+    .moment-text {
+      display: table-cell;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.65;
+      color: #4A3428;
+    }
+
+    /* El momento "esto sí" */
+    .esto-si {
+      background-color: #FAF3EF;
+      margin: 0 48px 36px;
+      border-radius: 4px;
+      padding: 28px 28px;
+      text-align: center;
+    }
+
+    .esto-si-pre {
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      color: #A08070;
+      margin: 0 0 10px 0;
+      line-height: 1.6;
+    }
+
+    .esto-si-phrase {
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 28px;
+      font-weight: 600;
+      color: #5C3B30;
+      letter-spacing: -0.02em;
+      margin: 0;
+      line-height: 1.15;
+    }
+
+    /* Cierre cálido */
+    .warm-close {
+      padding: 0 48px 32px;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+    }
+
+    .warm-close-text {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.7;
+      color: #4A3428;
+      margin: 0 0 6px 0;
+    }
+
+    /* CTA */
+    .cta-wrap { text-align: center; padding: 24px 48px 36px; }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #5C3B30;
+      color: #FFFFFF !important;
+      text-decoration: none;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 14px 48px;
+      border-radius: 2px;
+      border: 1px solid #5C3B30;
+      transition: background-color 200ms ease, color 200ms ease;
+    }
+
+    .cta-button:hover {
+      background-color: #FFFFFF !important;
+      color: #5C3B30 !important;
+    }
+
+    /* Firma */
+    .signature { padding: 0 48px 36px; font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif; }
+    .signature-text { font-size: 15px; font-weight: 400; line-height: 1.5; color: #4A3428; margin: 0 0 8px 0; }
+    .signature-name { font-size: 15px; font-weight: 500; color: #5C3B30; margin: 0 0 2px 0; }
+    .signature-role { font-size: 13px; font-weight: 400; color: #A08070; margin: 0; }
+
+    .divider { height: 1px; background-color: #EDE6DF; margin: 0 48px; }
+
+    /* Footer */
+    .footer { padding: 24px 48px; text-align: center; }
+    .footer-social { margin: 0 0 12px 0; }
+
+    .footer-social a {
+      display: inline-block;
+      margin: 0 8px;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 11px;
+      color: #A08070 !important;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      transition: color 150ms ease;
+    }
+
+    .footer-social a:hover { color: #5C3B30 !important; }
+
+    .footer-legal {
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 11px;
+      color: #C4B0A4;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .footer-legal a { color: #C4B0A4 !important; text-decoration: underline; }
+
+    /* Mobile */
+    @media only screen and (max-width: 620px) {
+      .email-wrapper    { padding: 0 !important; }
+      .email-container  { border-radius: 0 !important; }
+      .header           { padding: 20px 24px 16px !important; }
+      .intro-section    { padding: 32px 24px 28px !important; }
+      .quote-block      { padding: 36px 28px !important; }
+      .quote-text       { font-size: 18px !important; }
+      .emotional-section{ padding: 32px 24px 0 !important; }
+      .three-words      { padding: 32px 24px !important; margin: 24px 0 !important; }
+      .word-line        { font-size: 26px !important; }
+      .moments-section  { padding: 0 24px 28px !important; }
+      .esto-si          { margin: 0 24px 28px !important; }
+      .esto-si-phrase   { font-size: 22px !important; }
+      .warm-close       { padding: 0 24px 24px !important; }
+      .cta-wrap         { padding: 20px 24px 28px !important; }
+      .signature        { padding: 0 24px 28px !important; }
+      .divider          { margin: 0 24px !important; }
+      .footer           { padding: 20px 24px !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <span class="preheader">lo que pasa a las 4 semanas</span>
+
+  <div class="email-wrapper">
+    <div class="email-container">
+
+      <!-- HEADER — logo -->
+      <div class="header">
+        <a href="https://anelleskin.com/discount/WELCOME10?redirect=%2Fproducts%2Fanelle-skin-glow-mask" target="_blank" style="display:inline-block; line-height:0;">
+          <img
+            src="https://d3k81ch9hvuctc.cloudfront.net/company/YgRV6r/images/476823af-1399-4133-80b9-1e018e58fc8d.png"
+            alt="Anelle Skin"
+            width="330"
+            style="width:330px; height:auto; display:inline-block;"
+          />
+        </a>
+      </div>
+
+      <!-- INTRO — tono íntimo, sin imagen arriba esta vez -->
+      <div class="intro-section">
+        <p class="intro-label">4 semanas después</p>
+        <p class="intro-text">Hay algo que nos hace especial ilusión.</p>
+        <p class="intro-text">Y es cuando alguien vuelve después de unas semanas usando la Glow Mask.</p>
+        <p class="intro-text">Empiezan con dudas (como es normal).<br /><em>En plan: "bueno… a ver qué tal"</em></p>
+        <p class="intro-text">Y de repente, vuelven.</p>
+      </div>
+
+      <!-- BLOQUE CITA — el corazón del email -->
+      <div class="quote-block">
+        <span class="quote-mark">"</span>
+        <p style="font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif; font-size:22px; font-weight:400; line-height:1.45; color:#F7F0EA; margin:0; letter-spacing:-0.01em;">No con una foto perfecta.<br />Ni con un antes/después exagerado.<br />Con una foto normal. De espejo.<br />De esas que te haces sin pensar demasiado.</p>
+        <p style="font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif; font-size:22px; font-style:italic; font-weight:400; line-height:1.45; color:#F7F0EA; margin:24px 0 0 0; letter-spacing:-0.01em;">
+          "No sé si se aprecia en la foto… pero yo lo noto muchísimo."
+        </p>
+      </div>
+
+      <!-- SECCIÓN EMOCIONAL -->
+      <div class="emotional-section">
+        <p class="emotional-text">Y ahí es donde pasa todo.</p>
+        <p class="emotional-text">Porque no es solo la piel.<br />Es esa sensación de: <em style="font-style:italic; color:#5C3B30; font-weight:500;">"vale, esto está funcionando"</em></p>
+      </div>
+
+      <!-- LAS TRES PALABRAS -->
+      <div class="three-words">
+        <p class="three-words-label">Lo que notan a las 4 semanas</p>
+        <p class="word-line w1">Más luz</p>
+        <p class="word-line w2">Más uniforme</p>
+        <p class="word-line w3">Más tú</p>
+      </div>
+
+      <!-- MOMENTOS DE INTEGRACIÓN -->
+      <div class="moments-section">
+        <p class="moments-intro">Y lo mejor es que no viene de hacerlo perfecto. Viene de haberlo integrado en tu día sin darte cuenta:</p>
+
+        <p style="font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif; font-size:15px; font-weight:400; line-height:1.8; color:#4A3428; margin:0 0 20px 0;">
+          Mientras descansas en el sofá.<br />
+          Mientras respondes mensajes.<br />
+          Mientras haces tu vida.
+        </p>
+      </div>
+
+      <!-- EL MOMENTO "ESTO SÍ" -->
+      <div class="esto-si">
+        <p class="esto-si-pre">Y de repente, un día te miras y dices:</p>
+        <p class="esto-si-phrase">esto sí. 🤎</p>
+      </div>
+
+      <!-- CIERRE CÁLIDO -->
+      <div class="warm-close">
+        <p class="warm-close-text">Si estás en ese punto de duda, es totalmente normal.</p>
+        <p class="warm-close-text">Pero también te decimos algo: cuando empiezas, engancha (y en el buen sentido).</p>
+        <p class="warm-close-text" style="margin-top:12px;">Estamos por aquí para lo que necesites. 🫶🏼✨</p>
+      </div>
+
+      <!-- CTA -->
+      <div class="cta-wrap">
+        <a href="https://anelleskin.com/discount/WELCOME10?redirect=%2Fproducts%2Fanelle-skin-glow-mask" class="cta-button" target="_blank">
+          Empezar
+        </a>
+      </div>
+
+      <!-- FIRMA -->
+      <div class="signature">
+        <p class="signature-text">Con cariño,</p>
+        <p class="signature-name">Irene M.</p>
+        <p class="signature-role">Founder · Anelle Skin</p>
+      </div>
+
+      <!-- BARRA DESCUENTO -->
+      <div style="background-color:#5C3B30; padding:14px 48px; text-align:center; font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif;">
+        <span style="font-size:12px; font-weight:400; color:#F7F0EA; letter-spacing:0.02em; font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif;">Tu -10% sigue aquí esperándote: <strong style="color:#FFFFFF; font-weight:600;">WELCOME10</strong></span><br />
+        <a href="https://anelleskin.com/discount/WELCOME10?redirect=%2Fproducts%2Fanelle-skin-glow-mask" target="_blank" style="font-size:12px; font-weight:500; color:#F7F0EA; text-decoration:underline; font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif;">Comprar Ahora</a>
+      </div>
+
+      <!-- DIVISOR -->
+      <div class="divider"></div>
+
+      <!-- FOOTER -->
+      <div class="footer">
+        <div class="footer-social">
+          <a href="https://www.instagram.com/anelleskin" target="_blank">Instagram</a>
+          <a href="https://www.tiktok.com/@anelleskin" target="_blank">TikTok</a>
+        </div>
+        <p class="footer-legal">
+          Has recibido este correo porque te suscribiste en anelleskin.com.<br />
+          <a href="{{ unsubscribe_url }}" target="_blank">Cancelar suscripción</a> &nbsp;·&nbsp;
+          <a href="{{ view_in_browser_url }}" target="_blank">Ver en el navegador</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

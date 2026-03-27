@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>ahora sí que sí — Anelle Skin</title>
+
+  <!--
+    EMAIL: Campaña Primavera — Correo 1 (reenvío +1 día a no-aperturas)
+    Asunto: ahora sí que sí 😏
+    Preview: como el buen tiempo 🌸
+    CTA: https://anelleskin.com/discount/SRPINGSALE30?redirect=%2Fproducts%2Fanelle-skin-glow-mask
+    Cupón: SRPINGSALE30
+    Descuento: 30%
+    Válido: hasta el 31 de marzo
+    Carpeta: anelle-skin/04-PROYECTOS/email-marketing/
+    Última actualización: 2026-03-26
+  -->
+
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
+
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; }
+    body { margin: 0; padding: 0; width: 100% !important; }
+
+    .preheader { display: none !important; visibility: hidden; opacity: 0; font-size: 1px; height: 0; width: 0; }
+
+    .email-wrapper { background-color: #F7F0EA; width: 100%; padding: 32px 0; }
+
+    .email-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #FFFFFF;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    /* Barra superior urgencia */
+    .urgency-bar {
+      background-color: #2C1A0E;
+      padding: 11px 48px;
+      text-align: center;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #F7F0EA;
+    }
+
+    /* Cuerpo */
+    .body-content {
+      padding: 40px 48px 0;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+    }
+
+    .body-text {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.75;
+      color: #4A3428;
+      margin: 0 0 10px 0;
+    }
+
+    /* Código destacado inline */
+    .code-inline {
+      display: block;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      color: #5C3B30;
+      margin: 20px 0 4px 0;
+    }
+
+    .code-sub {
+      font-size: 13px;
+      font-weight: 400;
+      color: #A08070;
+      margin: 0 0 20px 0;
+      letter-spacing: 0.04em;
+    }
+
+    /* Link CTA textual */
+    .text-cta {
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      color: #5C3B30 !important;
+      text-decoration: none;
+      border-bottom: 1px solid #5C3B30;
+      padding-bottom: 1px;
+    }
+
+    /* Firma */
+    .signature {
+      padding: 28px 48px 36px;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+    }
+
+    .signature-text { font-size: 15px; font-weight: 400; color: #4A3428; margin: 0 0 8px 0; line-height: 1.5; }
+    .signature-name { font-size: 15px; font-weight: 500; color: #5C3B30; margin: 0 0 2px 0; }
+    .signature-role { font-size: 13px; font-weight: 400; color: #A08070; margin: 0; }
+
+    /* Nota inferior */
+    .bottom-note {
+      background-color: #5C3B30;
+      padding: 13px 48px;
+      text-align: center;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      color: #F7F0EA;
+      letter-spacing: 0.02em;
+    }
+
+    .divider { height: 1px; background-color: #EDE6DF; margin: 0 48px; }
+
+    /* Footer */
+    .footer { padding: 24px 48px; text-align: center; }
+    .footer-social { margin: 0 0 12px 0; }
+
+    .footer-social a {
+      display: inline-block;
+      margin: 0 8px;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 11px;
+      color: #A08070 !important;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      transition: color 150ms ease;
+    }
+
+    .footer-social a:hover { color: #5C3B30 !important; }
+
+    .footer-legal {
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 11px;
+      color: #C4B0A4;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .footer-legal a { color: #C4B0A4 !important; text-decoration: underline; }
+
+    /* Mobile */
+    @media only screen and (max-width: 620px) {
+      .email-wrapper   { padding: 0 !important; }
+      .email-container { border-radius: 0 !important; }
+      .urgency-bar     { padding: 10px 24px !important; }
+      .body-content    { padding: 32px 24px 0 !important; }
+      .signature       { padding: 24px 24px 28px !important; }
+      .bottom-note     { padding: 12px 24px !important; }
+      .divider         { margin: 0 24px !important; }
+      .footer          { padding: 20px 24px !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <span class="preheader">como el buen tiempo 🌸</span>
+
+  <div class="email-wrapper">
+    <div class="email-container">
+
+      <!-- BARRA SUPERIOR — urgencia -->
+      <div class="urgency-bar">
+        Sólo ahora: <strong style="font-weight:600; color:#FFFFFF;">Oferta Exclusiva</strong>
+      </div>
+
+      <!-- HERO IMAGE CON TEXTO ENCIMA -->
+      <div style="background-image:url('https://d3k81ch9hvuctc.cloudfront.net/company/YgRV6r/images/f02c51e9-6911-4302-ac04-3a8216aa4b73.jpeg'); background-size:cover; background-position:center top; width:100%;">
+        <div style="background:linear-gradient(to top, rgba(44,26,14,0.88) 0%, rgba(44,26,14,0.35) 55%, transparent 100%); padding:320px 48px 36px; box-sizing:border-box; text-align:center;">
+
+          <p style="font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif; font-size:12px; font-weight:500; letter-spacing:0.22em; text-transform:uppercase; color:rgba(247,240,234,0.8); margin:0 0 10px 0;">Spring Sale</p>
+
+          <p style="font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif; font-size:72px; font-weight:700; line-height:1; letter-spacing:-0.03em; color:#FFFFFF; margin:0 0 18px 0;">30% OFF</p>
+
+          <p style="font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif; font-size:12px; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; color:rgba(247,240,234,0.85); margin:0 0 28px 0;">Usa el cupón: SRPINGSALE30</p>
+
+          <a href="https://anelleskin.com/discount/SRPINGSALE30?redirect=%2Fproducts%2Fanelle-skin-glow-mask" target="_blank"
+             style="display:inline-block; background-color:#5C3B30; color:#FFFFFF !important; text-decoration:none; font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif; font-size:12px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; padding:14px 40px; border-radius:24px; border:none;">
+            Comprar ahora
+          </a>
+
+          <p style="font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif; font-size:11px; font-weight:400; letter-spacing:0.18em; text-transform:uppercase; color:rgba(247,240,234,0.5); margin:28px 0 0 0; text-align:right;">Anelle Skin</p>
+
+        </div>
+      </div>
+
+      <!-- CUERPO -->
+      <div class="body-content">
+
+        <p class="body-text">Por si lo viste y pensaste: <em>luego lo miro bien.</em></p>
+
+        <p style="font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif; font-size:22px; font-weight:600; letter-spacing:0.1em; color:#5C3B30; margin:20px 0 4px 0;">SPRINGSALE30</p>
+        <p style="font-family:Futura,'Futura PT','Jost',Helvetica,Arial,sans-serif; font-size:13px; font-weight:400; color:#A08070; margin:0 0 24px 0; letter-spacing:0.04em;">(30% en la Glow Mask)</p>
+
+        <p class="body-text">Porque sí, lo de la primavera está muy bien,<br />
+        pero también tiene ese punto de empezar cosas… y dejarlas a medias.</p>
+
+        <p class="body-text">Esto no va de eso.</p>
+
+        <p class="body-text">Va de algo que puedes usar incluso en esos días en los que no te apetece demasiado, <strong>sin cambiar nada más.</strong></p>
+
+        <p class="body-text">Así que lo dejamos por aquí, sin más historia.</p>
+
+        <p class="body-text" style="margin-top:20px;">
+          <a href="https://anelleskin.com/discount/SRPINGSALE30?redirect=%2Fproducts%2Fanelle-skin-glow-mask" class="text-cta" target="_blank">→ Ver la Glow Mask</a>
+        </p>
+
+      </div>
+
+      <!-- FIRMA -->
+      <div class="signature">
+        <p class="signature-text">Con cariño,</p>
+        <p class="signature-name">Irene M.</p>
+        <p class="signature-role">Founder · Anelle Skin</p>
+      </div>
+
+      <!-- NOTA INFERIOR -->
+      <div class="bottom-note">
+        Solo para quienes estáis aquí (hasta el 31 de marzo) 🤎
+      </div>
+
+      <!-- DIVISOR -->
+      <div class="divider"></div>
+
+      <!-- FOOTER -->
+      <div class="footer">
+        <div class="footer-social">
+          <a href="https://www.instagram.com/anelleskin" target="_blank">Instagram</a>
+          <a href="https://www.tiktok.com/@anelleskin" target="_blank">TikTok</a>
+        </div>
+        <p class="footer-legal">
+          Has recibido este correo porque te suscribiste en anelleskin.com.<br />
+          <a href="{{ unsubscribe_url }}" target="_blank">Cancelar suscripción</a> &nbsp;·&nbsp;
+          <a href="{{ view_in_browser_url }}" target="_blank">Ver en el navegador</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
