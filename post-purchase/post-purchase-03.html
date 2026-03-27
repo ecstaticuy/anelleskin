@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Esto es lo que está pasando en tu piel ahora mismo — Anelle Skin</title>
+
+  <!--
+    EMAIL: Post-Purchase Series — Correo 3 (Día 10)
+    Asunto: Esto es lo que está pasando en tu piel ahora mismo
+    Preview: sesión a sesión, así funciona
+    Sin CTA / Sin descuento
+    Carpeta: anelle-skin/04-PROYECTOS/email-marketing/post-purchase/
+    Klaviyo Flow ID: pendiente | Mensaje ID: pendiente
+    Última actualización: 2026-03-27
+  -->
+
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap');
+
+    /* Reset */
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; }
+    body { margin: 0; padding: 0; width: 100% !important; }
+
+    .preheader { display: none !important; visibility: hidden; opacity: 0; font-size: 1px; height: 0; width: 0; }
+
+    .email-wrapper {
+      background-color: #F7F0EA;
+      width: 100%;
+      padding: 32px 0;
+    }
+
+    .email-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #FFFFFF;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    /* Header */
+    .header {
+      background-color: #FFFFFF;
+      padding: 28px 48px 20px;
+      text-align: center;
+    }
+
+    /* Hero con overlay */
+    .hero-section {
+      position: relative;
+      width: 100%;
+      min-height: 220px;
+      background-color: #2C1A0E;
+    }
+
+    /* Cuerpo */
+    .body-content {
+      padding: 32px 48px 0;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      color: #4A3428;
+    }
+
+    .body-text {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.75;
+      color: #4A3428;
+      margin: 0 0 20px 0;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+    }
+
+    /* Timeline */
+    .timeline-block {
+      background-color: #F7F0EA;
+      border-left: 3px solid #5C3B30;
+      border-radius: 0 4px 4px 0;
+      padding: 0;
+      margin: 8px 0 28px;
+      overflow: hidden;
+    }
+
+    .timeline-item {
+      padding: 20px 24px;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+    }
+
+    .timeline-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #5C3B30;
+      margin: 0 0 6px 0;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+    }
+
+    .timeline-text {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.7;
+      color: #2C1A0E;
+      margin: 0;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+    }
+
+    .timeline-divider {
+      height: 1px;
+      background-color: #EDE6DF;
+      margin: 0;
+    }
+
+    /* Bloque ayuda */
+    .help-block {
+      background-color: #F7F0EA;
+      border-radius: 4px;
+      padding: 20px 24px;
+      margin: 28px 0 0;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: #7A6358;
+      line-height: 1.65;
+    }
+
+    /* Firma */
+    .signature {
+      padding: 28px 48px 36px;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+    }
+
+    .signature-text { font-size: 15px; font-weight: 400; line-height: 1.5; color: #4A3428; margin: 0 0 8px 0; }
+
+    .signature-name {
+      font-size: 15px;
+      font-weight: 500;
+      color: #5C3B30;
+      margin: 0 0 2px 0;
+    }
+
+    .signature-role {
+      font-size: 13px;
+      font-weight: 400;
+      color: #A08070;
+      margin: 0;
+    }
+
+    .divider {
+      height: 1px;
+      background-color: #EDE6DF;
+      margin: 0 48px;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 24px 48px;
+      text-align: center;
+    }
+
+    .footer-social { margin: 0 0 12px 0; }
+
+    .footer-social a {
+      display: inline-block;
+      margin: 0 8px;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      color: #A08070 !important;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 150ms ease;
+    }
+
+    .footer-social a:hover { color: #5C3B30 !important; }
+
+    .footer-legal {
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 11px;
+      color: #C4B0A4;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .footer-legal a { color: #C4B0A4 !important; text-decoration: underline; }
+
+    /* Mobile */
+    @media only screen and (max-width: 620px) {
+      .email-wrapper    { padding: 0 !important; }
+      .email-container  { border-radius: 0 !important; }
+      .header           { padding: 20px 24px 16px !important; }
+      .body-content     { padding: 20px 24px 0 !important; }
+      .timeline-item    { padding: 16px 18px !important; }
+      .help-block       { padding: 16px 18px !important; }
+      .signature        { padding: 20px 24px 28px !important; }
+      .divider          { margin: 0 24px !important; }
+      .footer           { padding: 20px 24px !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <span class="preheader">sesión a sesión, así funciona</span>
+
+  <div class="email-wrapper">
+    <div class="email-container">
+
+      <!-- HEADER — logo -->
+      <div class="header">
+        <a href="https://anelleskin.com" target="_blank" style="display:inline-block; line-height:0;">
+          <img
+            src="https://d3k81ch9hvuctc.cloudfront.net/company/YgRV6r/images/476823af-1399-4133-80b9-1e018e58fc8d.png"
+            alt="Anelle Skin"
+            width="330"
+            style="width:330px; height:auto; display:inline-block;"
+          />
+        </a>
+      </div>
+
+      <!-- HERO CON OVERLAY — imagen + texto encima -->
+      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+        <tr>
+          <td align="center" valign="middle"
+            background="https://d3k81ch9hvuctc.cloudfront.net/company/YgRV6r/images/19815c4d-0a11-42c1-a5e4-f29a3266a85d.png"
+            style="background-image: url('https://d3k81ch9hvuctc.cloudfront.net/company/YgRV6r/images/19815c4d-0a11-42c1-a5e4-f29a3266a85d.png'); background-size: cover; background-position: center; background-color: #2C1A0E; height: 220px; padding: 0;">
+            <!--[if gte mso 9]>
+            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:220px;">
+              <v:fill type="frame" src="https://d3k81ch9hvuctc.cloudfront.net/company/YgRV6r/images/19815c4d-0a11-42c1-a5e4-f29a3266a85d.png" color="#2C1A0E"/>
+              <v:textbox inset="0,0,0,0">
+            <![endif]-->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td align="center" valign="middle" style="height:220px; padding: 32px 48px; background-color: rgba(44,26,14,0.52);">
+                  <p style="font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif; font-size: 22px; font-weight: 500; color: #FFFFFF; margin: 0; line-height: 1.35; letter-spacing: 0.02em;">
+                    Sesión a sesión.<br />Así funciona.
+                  </p>
+                </td>
+              </tr>
+            </table>
+            <!--[if gte mso 9]>
+              </v:textbox>
+            </v:rect>
+            <![endif]-->
+          </td>
+        </tr>
+      </table>
+
+      <!-- CUERPO -->
+      <div class="body-content">
+
+        <p class="body-text" style="margin:0 0 4px 0;">Hola bombón 🤎</p>
+
+        <p class="body-text">
+          Ya llevas unos días con la Glow Mask. Es el momento de contarte qué está pasando realmente.
+        </p>
+
+        <p class="body-text">
+          La fototerapia LED no da resultados en una sesión. Funciona por acumulación. Cada sesión activa la mitocondria de tus células, que produce más ATP — la energía que necesitan para fabricar colágeno y elastina.
+        </p>
+
+        <p class="body-text">Eso no ocurre de una vez. Ocurre sesión a sesión.</p>
+
+      </div>
+
+      <!-- TIMELINE SEMANA A SEMANA -->
+      <div style="padding: 0 48px;">
+        <div class="timeline-block">
+
+          <div class="timeline-item">
+            <p class="timeline-label">Semana 1–2</p>
+            <p class="timeline-text">La piel se adapta. Más luminosidad, más hidratación. El tono empieza a igualarse.</p>
+          </div>
+
+          <div class="timeline-divider"></div>
+
+          <div class="timeline-item">
+            <p class="timeline-label">Semana 3</p>
+            <p class="timeline-text">Aquí empieza lo real. El colágeno se activa. Las líneas se suavizan. La piel se ve más firme.</p>
+          </div>
+
+          <div class="timeline-divider"></div>
+
+          <div class="timeline-item">
+            <p class="timeline-label">Semana 4</p>
+            <p class="timeline-text">Los resultados son visibles y sostenibles. No es un efecto que desaparece — es tejido real que se ha regenerado.</p>
+          </div>
+
+          <div class="timeline-divider"></div>
+
+          <div class="timeline-item">
+            <p class="timeline-label">A partir de la semana 5</p>
+            <p class="timeline-text">3-4 sesiones por semana es suficiente para mantener.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- BLOQUE AYUDA -->
+      <div style="padding:0 48px 8px;">
+        <div class="help-block">
+          Si tienes alguna duda sobre tu caso concreto, respondo personalmente.
+        </div>
+      </div>
+
+      <!-- FIRMA -->
+      <div class="signature">
+        <p class="signature-text">Con cariño,</p>
+        <p class="signature-name">Irene M.</p>
+        <p class="signature-role">Founder · Anelle Skin</p>
+      </div>
+
+      <!-- DIVISOR -->
+      <div class="divider"></div>
+
+      <!-- FOOTER -->
+      <div class="footer">
+        <div class="footer-social">
+          <a href="https://www.instagram.com/anelleskin" target="_blank">Instagram</a>
+          <a href="https://www.tiktok.com/@anelleskin" target="_blank">TikTok</a>
+        </div>
+        <p class="footer-legal">
+          Has recibido este correo porque realizaste una compra en anelleskin.com.<br />
+          <a href="{{ unsubscribe_url }}" target="_blank">Cancelar suscripción</a> &nbsp;·&nbsp;
+          <a href="{{ view_in_browser_url }}" target="_blank">Ver en el navegador</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

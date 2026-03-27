@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Volviste. — Anelle Skin</title>
+
+  <!--
+    EMAIL: Post-Purchase Series — Correo 1B (Segunda compra o más)
+    Asunto: Volviste. 🤎
+    Preview: eso no pasa con cualquier cosa
+    CTA: {{ event.extra.order_url }} — enlace de texto
+    Sin descuento
+    Carpeta: anelle-skin/04-PROYECTOS/email-marketing/post-purchase/
+    Klaviyo Flow ID: pendiente | Mensaje ID: pendiente
+    Última actualización: 2026-03-27
+  -->
+
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap');
+
+    /* Reset */
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; }
+    body { margin: 0; padding: 0; width: 100% !important; }
+
+    .preheader { display: none !important; visibility: hidden; opacity: 0; font-size: 1px; height: 0; width: 0; }
+
+    .email-wrapper {
+      background-color: #F7F0EA;
+      width: 100%;
+      padding: 32px 0;
+    }
+
+    .email-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #FFFFFF;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    /* Header */
+    .header {
+      background-color: #FFFFFF;
+      padding: 28px 48px 20px;
+      text-align: center;
+    }
+
+    /* Cuerpo */
+    .body-content {
+      padding: 36px 48px 0;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      color: #4A3428;
+    }
+
+    .body-text {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.75;
+      color: #4A3428;
+      margin: 0 0 20px 0;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+    }
+
+    .body-text a {
+      color: #5C3B30;
+      text-decoration: underline;
+    }
+
+    .body-text-large {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.65;
+      color: #2C1A0E;
+      margin: 0 0 24px 0;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+    }
+
+    /* Separador decorativo */
+    .accent-line {
+      width: 40px;
+      height: 2px;
+      background-color: #5C3B30;
+      margin: 0 0 28px 0;
+    }
+
+    /* Bloque ayuda */
+    .help-block {
+      background-color: #F7F0EA;
+      border-radius: 4px;
+      padding: 20px 24px;
+      margin: 28px 0 0;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: #7A6358;
+      line-height: 1.65;
+    }
+
+    /* Firma */
+    .signature {
+      padding: 28px 48px 36px;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+    }
+
+    .signature-text { font-size: 15px; font-weight: 400; line-height: 1.5; color: #4A3428; margin: 0 0 8px 0; }
+
+    .signature-name {
+      font-size: 15px;
+      font-weight: 500;
+      color: #5C3B30;
+      margin: 0 0 2px 0;
+    }
+
+    .signature-role {
+      font-size: 13px;
+      font-weight: 400;
+      color: #A08070;
+      margin: 0;
+    }
+
+    .divider {
+      height: 1px;
+      background-color: #EDE6DF;
+      margin: 0 48px;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 24px 48px;
+      text-align: center;
+    }
+
+    .footer-social { margin: 0 0 12px 0; }
+
+    .footer-social a {
+      display: inline-block;
+      margin: 0 8px;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      color: #A08070 !important;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 150ms ease;
+    }
+
+    .footer-social a:hover { color: #5C3B30 !important; }
+
+    .footer-legal {
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 11px;
+      color: #C4B0A4;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .footer-legal a { color: #C4B0A4 !important; text-decoration: underline; }
+
+    /* Mobile */
+    @media only screen and (max-width: 620px) {
+      .email-wrapper    { padding: 0 !important; }
+      .email-container  { border-radius: 0 !important; }
+      .header           { padding: 20px 24px 16px !important; }
+      .body-content     { padding: 24px 24px 0 !important; }
+      .help-block       { padding: 16px 18px !important; }
+      .signature        { padding: 20px 24px 28px !important; }
+      .divider          { margin: 0 24px !important; }
+      .footer           { padding: 20px 24px !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <span class="preheader">eso no pasa con cualquier cosa</span>
+
+  <div class="email-wrapper">
+    <div class="email-container">
+
+      <!-- HEADER — logo -->
+      <div class="header">
+        <a href="https://anelleskin.com" target="_blank" style="display:inline-block; line-height:0;">
+          <img
+            src="https://d3k81ch9hvuctc.cloudfront.net/company/YgRV6r/images/476823af-1399-4133-80b9-1e018e58fc8d.png"
+            alt="Anelle Skin"
+            width="330"
+            style="width:330px; height:auto; display:inline-block;"
+          />
+        </a>
+      </div>
+
+      <!-- HERO — "Volviste." con overlay oscuro -->
+      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+        <tr>
+          <td align="center" valign="middle"
+            background="https://d3k81ch9hvuctc.cloudfront.net/company/YgRV6r/images/19815c4d-0a11-42c1-a5e4-f29a3266a85d.png"
+            style="background-image: url('https://d3k81ch9hvuctc.cloudfront.net/company/YgRV6r/images/19815c4d-0a11-42c1-a5e4-f29a3266a85d.png'); background-size: cover; background-position: center; background-color: #2C1A0E; height: 280px; padding: 0;">
+            <!--[if gte mso 9]>
+            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:280px;">
+              <v:fill type="frame" src="https://d3k81ch9hvuctc.cloudfront.net/company/YgRV6r/images/19815c4d-0a11-42c1-a5e4-f29a3266a85d.png" color="#2C1A0E"/>
+              <v:textbox inset="0,0,0,0">
+            <![endif]-->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td align="center" valign="middle" style="height:280px; padding: 40px 48px; background-color: rgba(28,14,6,0.65);">
+                  <p style="font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif; font-size: 48px; font-weight: 500; color: #FFFFFF; margin: 0 0 12px 0; line-height: 1.1; letter-spacing: -0.01em;">
+                    Volviste.
+                  </p>
+                  <p style="font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 400; color: rgba(255,255,255,0.7); margin: 0; letter-spacing: 0.15em; text-transform: uppercase;">
+                    Eso no pasa con cualquier cosa
+                  </p>
+                </td>
+              </tr>
+            </table>
+            <!--[if gte mso 9]>
+              </v:textbox>
+            </v:rect>
+            <![endif]-->
+          </td>
+        </tr>
+      </table>
+
+      <!-- CUERPO -->
+      <div class="body-content">
+
+        <p class="body-text" style="margin:0 0 4px 0;">Hola bombón 🤎</p>
+
+        <div class="accent-line"></div>
+
+        <p class="body-text-large">
+          No todo el mundo vuelve. Tú sí.
+        </p>
+
+        <p class="body-text">
+          Eso nos dice más que cualquier reseña.
+        </p>
+
+        <p class="body-text">
+          Tu pedido está en camino. Llega en 2-5 días laborables.
+        </p>
+
+        <p class="body-text">
+          Ya sabes lo que viene. Ya sabes cómo funciona.<br />
+          Disfrútalo.<br /><br />
+          <a href="{{ event.extra.order_url }}" target="_blank">Ver mi pedido</a>
+        </p>
+
+      </div>
+
+      <!-- BLOQUE AYUDA -->
+      <div style="padding:0 48px 8px;">
+        <div class="help-block">
+          Si tienes cualquier duda, responde a este email. Te atiendo personalmente.
+        </div>
+      </div>
+
+      <!-- FIRMA -->
+      <div class="signature">
+        <p class="signature-text">Con cariño,</p>
+        <p class="signature-name">Irene M.</p>
+        <p class="signature-role">Founder · Anelle Skin</p>
+      </div>
+
+      <!-- DIVISOR -->
+      <div class="divider"></div>
+
+      <!-- FOOTER -->
+      <div class="footer">
+        <div class="footer-social">
+          <a href="https://www.instagram.com/anelleskin" target="_blank">Instagram</a>
+          <a href="https://www.tiktok.com/@anelleskin" target="_blank">TikTok</a>
+        </div>
+        <p class="footer-legal">
+          Has recibido este correo porque realizaste una compra en anelleskin.com.<br />
+          <a href="{{ unsubscribe_url }}" target="_blank">Cancelar suscripción</a> &nbsp;·&nbsp;
+          <a href="{{ view_in_browser_url }}" target="_blank">Ver en el navegador</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

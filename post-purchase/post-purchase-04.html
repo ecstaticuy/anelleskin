@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>¿Qué has notado hasta ahora? — Anelle Skin</title>
+
+  <!--
+    EMAIL: Post-Purchase Series — Correo 4 (Día 14)
+    Asunto: ¿Qué has notado hasta ahora?
+    Preview: lo leo yo
+    CTA: REEMPLAZAR_URL_RESEÑA — enlace botón reseña
+    Sin descuento
+    Carpeta: anelle-skin/04-PROYECTOS/email-marketing/post-purchase/
+    Klaviyo Flow ID: pendiente | Mensaje ID: pendiente
+    Última actualización: 2026-03-27
+  -->
+
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap');
+
+    /* Reset */
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; }
+    body { margin: 0; padding: 0; width: 100% !important; }
+
+    .preheader { display: none !important; visibility: hidden; opacity: 0; font-size: 1px; height: 0; width: 0; }
+
+    .email-wrapper {
+      background-color: #F7F0EA;
+      width: 100%;
+      padding: 32px 0;
+    }
+
+    .email-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #FFFFFF;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    /* Header */
+    .header {
+      background-color: #FFFFFF;
+      padding: 28px 48px 20px;
+      text-align: center;
+    }
+
+    /* Cuerpo */
+    .body-content {
+      padding: 16px 48px 0;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      color: #4A3428;
+    }
+
+    .body-text {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.75;
+      color: #4A3428;
+      margin: 0 0 20px 0;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+    }
+
+    /* Botón CTA */
+    .cta-wrap {
+      text-align: center;
+      padding: 32px 48px 8px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #5C3B30;
+      color: #FFFFFF !important;
+      text-decoration: none;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 14px 40px;
+      border-radius: 2px;
+      border: 1px solid #5C3B30;
+      transition: background-color 200ms ease, color 200ms ease;
+    }
+
+    .cta-button:hover {
+      background-color: #FFFFFF !important;
+      color: #5C3B30 !important;
+    }
+
+    /* Bloque ayuda */
+    .help-block {
+      background-color: #F7F0EA;
+      border-radius: 4px;
+      padding: 20px 24px;
+      margin: 28px 0 0;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: #7A6358;
+      line-height: 1.65;
+    }
+
+    /* Firma */
+    .signature {
+      padding: 28px 48px 36px;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+    }
+
+    .signature-text { font-size: 15px; font-weight: 400; line-height: 1.5; color: #4A3428; margin: 0 0 8px 0; }
+
+    .signature-name {
+      font-size: 15px;
+      font-weight: 500;
+      color: #5C3B30;
+      margin: 0 0 2px 0;
+    }
+
+    .signature-role {
+      font-size: 13px;
+      font-weight: 400;
+      color: #A08070;
+      margin: 0;
+    }
+
+    .divider {
+      height: 1px;
+      background-color: #EDE6DF;
+      margin: 0 48px;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 24px 48px;
+      text-align: center;
+    }
+
+    .footer-social { margin: 0 0 12px 0; }
+
+    .footer-social a {
+      display: inline-block;
+      margin: 0 8px;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      color: #A08070 !important;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 150ms ease;
+    }
+
+    .footer-social a:hover { color: #5C3B30 !important; }
+
+    .footer-legal {
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 11px;
+      color: #C4B0A4;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .footer-legal a { color: #C4B0A4 !important; text-decoration: underline; }
+
+    /* Mobile */
+    @media only screen and (max-width: 620px) {
+      .email-wrapper    { padding: 0 !important; }
+      .email-container  { border-radius: 0 !important; }
+      .header           { padding: 20px 24px 16px !important; }
+      .body-content     { padding: 12px 24px 0 !important; }
+      .cta-wrap         { padding: 24px 24px 8px !important; }
+      .help-block       { padding: 16px 18px !important; }
+      .signature        { padding: 20px 24px 28px !important; }
+      .divider          { margin: 0 24px !important; }
+      .footer           { padding: 20px 24px !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <span class="preheader">lo leo yo</span>
+
+  <div class="email-wrapper">
+    <div class="email-container">
+
+      <!-- HEADER — logo -->
+      <div class="header">
+        <a href="https://anelleskin.com" target="_blank" style="display:inline-block; line-height:0;">
+          <img
+            src="https://d3k81ch9hvuctc.cloudfront.net/company/YgRV6r/images/476823af-1399-4133-80b9-1e018e58fc8d.png"
+            alt="Anelle Skin"
+            width="330"
+            style="width:330px; height:auto; display:inline-block;"
+          />
+        </a>
+      </div>
+
+      <!-- CUERPO -->
+      <div class="body-content">
+
+        <p class="body-text" style="margin:0 0 4px 0;">Hola bombón 🤎</p>
+
+        <p class="body-text">
+          Llevas aproximadamente dos semanas con la Glow Mask.
+        </p>
+
+        <p class="body-text">
+          No te voy a pedir que dejes 5 estrellas. Te voy a pedir algo más útil: cuéntanos qué has notado. Bueno, malo, o sin cambios todavía — todo nos ayuda.
+        </p>
+
+        <p class="body-text">
+          Puedes responder directamente a este email. Lo leo yo.
+        </p>
+
+        <p class="body-text">
+          Y si quieres dejar una reseña, te lo agradecemos mucho. Apreciamos tu sinceridad — sea lo que sea lo que cuentes.
+        </p>
+
+      </div>
+
+      <!-- BOTÓN CTA — reseña -->
+      <div class="cta-wrap">
+        <a href="REEMPLAZAR_URL_RESEÑA" class="cta-button" target="_blank">
+          Dejar mi reseña
+        </a>
+      </div>
+
+      <!-- BLOQUE AYUDA -->
+      <div style="padding:0 48px 8px;">
+        <div class="help-block">
+          Si algo no ha ido bien, también quiero saberlo. Para eso estamos.
+        </div>
+      </div>
+
+      <!-- FIRMA -->
+      <div class="signature">
+        <p class="signature-text">Con cariño,</p>
+        <p class="signature-name">Irene M.</p>
+        <p class="signature-role">Founder · Anelle Skin</p>
+      </div>
+
+      <!-- DIVISOR -->
+      <div class="divider"></div>
+
+      <!-- FOOTER -->
+      <div class="footer">
+        <div class="footer-social">
+          <a href="https://www.instagram.com/anelleskin" target="_blank">Instagram</a>
+          <a href="https://www.tiktok.com/@anelleskin" target="_blank">TikTok</a>
+        </div>
+        <p class="footer-legal">
+          Has recibido este correo porque realizaste una compra en anelleskin.com.<br />
+          <a href="{{ unsubscribe_url }}" target="_blank">Cancelar suscripción</a> &nbsp;·&nbsp;
+          <a href="{{ view_in_browser_url }}" target="_blank">Ver en el navegador</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
