@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Ojeaste algo por aquí 🤎 — Anelle Skin</title>
+
+  <!--
+    EMAIL: Browse Abandonment — Correo 1 (+3h)
+    Asunto: Ojeaste algo por aquí 🤎
+    Preview: Sin presión. Solo quería asegurarme de algo.
+    CTA: https://anelleskin.com/products/anelle-skin-glow-mask
+    Sin descuento
+    Carpeta: anelle-skin/04-PROYECTOS/email-marketing/browse abandonment/
+    Klaviyo Flow: pendiente crear | Trigger: Viewed Product
+    Excluir: compradores Glow Mask + perfiles con carrito activo
+    Última actualización: 2026-04-08
+  -->
+
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap');
+
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; }
+    body { margin: 0; padding: 0; width: 100% !important; }
+
+    .preheader { display: none !important; visibility: hidden; opacity: 0; font-size: 1px; height: 0; width: 0; }
+
+    .email-wrapper {
+      background-color: #F7F0EA;
+      width: 100%;
+      padding: 32px 0;
+    }
+
+    .email-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #FFFFFF;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    /* ─── Header ─── */
+    .header {
+      background-color: #FFFFFF;
+      padding: 28px 48px 24px;
+      text-align: center;
+    }
+
+    /* ─── Franja de producto sobre fondo crema ─── */
+    .product-strip {
+      background-color: #F7F0EA;
+      padding: 36px 48px;
+      text-align: center;
+    }
+
+    .product-strip img {
+      width: 220px;
+      height: auto;
+      display: inline-block;
+    }
+
+    .product-strip-label {
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #A08070;
+      margin: 0 0 20px 0;
+    }
+
+    /* ─── Cuerpo ─── */
+    .body-content {
+      padding: 36px 48px 0;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      color: #4A3428;
+    }
+
+    .greeting {
+      font-size: 15px;
+      font-weight: 400;
+      color: #2C1A0E;
+      margin: 0 0 4px 0;
+      line-height: 1.5;
+    }
+
+    .intro-headline {
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 1.25;
+      color: #2C1A0E;
+      margin: 0 0 24px 0;
+      letter-spacing: -0.015em;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+    }
+
+    .body-text {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.75;
+      color: #4A3428;
+      margin: 0 0 12px 0;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+    }
+
+    /* ─── Bloque "estado actual" — lista con separadores ─── */
+    .state-list {
+      margin: 28px 0;
+      padding: 0;
+      border-top: 1px solid #EDE6DF;
+    }
+
+    .state-item {
+      display: block;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: #7A6358;
+      line-height: 1.6;
+      padding: 12px 0;
+      border-bottom: 1px solid #EDE6DF;
+      letter-spacing: 0.01em;
+    }
+
+    .state-item::before {
+      content: "—\00a0";
+      color: #C4B0A4;
+      font-weight: 300;
+    }
+
+    /* ─── Bloque central de convicción ─── */
+    .conviction-block {
+      background-color: #2C1A0E;
+      border-radius: 4px;
+      padding: 28px 32px;
+      margin: 28px 0 0;
+      text-align: center;
+    }
+
+    .conviction-block p {
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.8;
+      color: #F7F0EA;
+      margin: 0;
+    }
+
+    .conviction-block strong {
+      color: #FFFFFF;
+      font-weight: 500;
+    }
+
+    /* ─── Texto respuesta ─── */
+    .reply-nudge {
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      color: #A08070;
+      line-height: 1.65;
+      margin: 20px 0 0 0;
+      padding: 16px 20px;
+      border: 1px solid #EDE6DF;
+      border-radius: 4px;
+    }
+
+    /* ─── CTA ─── */
+    .cta-wrap {
+      text-align: center;
+      padding: 32px 48px 8px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #5C3B30;
+      color: #FFFFFF !important;
+      text-decoration: none;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 14px 44px;
+      border-radius: 2px;
+      border: 1px solid #5C3B30;
+      transition: background-color 200ms ease, color 200ms ease;
+    }
+
+    .cta-button:hover {
+      background-color: #FFFFFF !important;
+      color: #5C3B30 !important;
+    }
+
+    /* ─── Firma ─── */
+    .signature {
+      padding: 28px 48px 36px;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+    }
+
+    .signature-text { font-size: 15px; font-weight: 400; line-height: 1.5; color: #4A3428; margin: 0 0 8px 0; }
+    .signature-name { font-size: 15px; font-weight: 500; color: #5C3B30; margin: 0 0 2px 0; }
+    .signature-role { font-size: 13px; font-weight: 400; color: #A08070; margin: 0; }
+
+    .divider { height: 1px; background-color: #EDE6DF; margin: 0 48px; }
+
+    /* ─── Footer ─── */
+    .footer { padding: 24px 48px; text-align: center; }
+    .footer-social { margin: 0 0 12px 0; }
+
+    .footer-social a {
+      display: inline-block;
+      margin: 0 8px;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      color: #A08070 !important;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .footer-social a:hover { color: #5C3B30 !important; }
+
+    .footer-legal {
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 11px;
+      color: #C4B0A4;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .footer-legal a { color: #C4B0A4 !important; text-decoration: underline; }
+
+    /* ─── Mobile ─── */
+    @media only screen and (max-width: 620px) {
+      .email-wrapper    { padding: 0 !important; }
+      .email-container  { border-radius: 0 !important; }
+      .header           { padding: 20px 24px 18px !important; }
+      .product-strip    { padding: 28px 24px !important; }
+      .product-strip img { width: 180px !important; }
+      .body-content     { padding: 28px 24px 0 !important; }
+      .conviction-block { padding: 22px 20px !important; }
+      .cta-wrap         { padding: 24px 24px 8px !important; }
+      .signature        { padding: 24px 24px 28px !important; }
+      .divider          { margin: 0 24px !important; }
+      .footer           { padding: 20px 24px !important; }
+      .intro-headline   { font-size: 19px !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <span class="preheader">Sin presión. Solo quería asegurarme de algo.</span>
+
+  <div class="email-wrapper">
+    <div class="email-container">
+
+      <!-- HEADER — logo -->
+      <div class="header">
+        <a href="https://anelleskin.com" target="_blank" style="display:inline-block; line-height:0;">
+          <img
+            src="https://d3k81ch9hvuctc.cloudfront.net/company/YgRV6r/images/476823af-1399-4133-80b9-1e018e58fc8d.png"
+            alt="Anelle Skin"
+            width="330"
+            style="width:330px; height:auto; display:inline-block;"
+          />
+        </a>
+      </div>
+
+      <!-- FRANJA CREMA CON PRODUCTO -->
+      <div class="product-strip">
+        <p class="product-strip-label">Glow Mask · Anelle Skin</p>
+        <img
+          src="https://d3k81ch9hvuctc.cloudfront.net/company/YgRV6r/images/f02c51e9-6911-4302-ac04-3a8216aa4b73.jpeg"
+          alt="Glow Mask — Anelle Skin"
+        />
+      </div>
+
+      <!-- CUERPO -->
+      <div class="body-content">
+
+        <p class="greeting">Hola bombón 🤎</p>
+        <p class="intro-headline">Estuviste mirando la Glow Mask.</p>
+
+        <p class="body-text">
+          No sé si fue curiosidad, si estás valorando si es para ti, o si simplemente no era el momento.
+        </p>
+
+        <p class="body-text">Lo que sí conozco bien es el punto de partida de la mayoría de mujeres que llegan aquí:</p>
+
+        <!-- LISTA ESTADO ACTUAL -->
+        <div class="state-list">
+          <span class="state-item">Han probado cosas que no funcionaron</span>
+          <span class="state-item">Han gastado dinero en promesas que no se cumplieron</span>
+          <span class="state-item">Siguen buscando algo que encaje de verdad en su día</span>
+        </div>
+
+        <!-- BLOQUE CONVICCIÓN -->
+        <div class="conviction-block">
+          <p>La Glow Mask no es un milagro.<br />
+          Es <strong>tecnología LED que llevas años pudiendo usar en casa.</strong><br />
+          10 minutos. Con constancia.<br />
+          Eso es todo lo que necesitas.</p>
+        </div>
+
+        <!-- INVITACIÓN A RESPONDER -->
+        <div class="reply-nudge">
+          ¿Tienes alguna duda sobre cómo funciona, si es para tu tipo de piel o qué puedes esperar? Responde a este email. Te cuento.
+        </div>
+
+      </div>
+
+      <!-- BOTÓN CTA -->
+      <div class="cta-wrap">
+        <a href="https://anelleskin.com/products/anelle-skin-glow-mask" class="cta-button" target="_blank">
+          Saber más sobre la Glow Mask
+        </a>
+      </div>
+
+      <!-- FIRMA -->
+      <div class="signature">
+        <p class="signature-text">Con cariño,</p>
+        <p class="signature-name">Irene M.</p>
+        <p class="signature-role">Founder · Anelle Skin</p>
+      </div>
+
+      <!-- DIVISOR -->
+      <div class="divider"></div>
+
+      <!-- FOOTER -->
+      <div class="footer">
+        <div class="footer-social">
+          <a href="https://www.instagram.com/anelleskin" target="_blank">Instagram</a>
+          <a href="https://www.tiktok.com/@anelleskin" target="_blank">TikTok</a>
+        </div>
+        <p class="footer-legal">
+          Has recibido este correo porque visitaste nuestra tienda en anelleskin.com.<br />
+          <a href="{{ unsubscribe_url }}" target="_blank">Cancelar suscripción</a> &nbsp;·&nbsp;
+          <a href="{{ view_in_browser_url }}" target="_blank">Ver en el navegador</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
