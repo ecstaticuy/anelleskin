@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Lo que nos escribió Laura — Anelle Skin</title>
+  <title>Los mensajes que nos alegran el día — Anelle Skin</title>
 
   <!--
-    EMAIL: Abandoned Cart — Correo 4 (+72h) — último
-    Asunto: Lo que nos escribió Laura
-    Preview: no es un milagro. es constancia.
+    EMAIL: Abandoned Cart — Correo 4 (+72h)
+    Asunto: los mensajes que nos alegran el día ✨
+    Preview: gracias Laura 🤎
     CTA: {{ event.extra.checkout_url }}
     Sin descuento
     Carpeta: anelle-skin/04-PROYECTOS/email-marketing/abandoned cart/
@@ -91,6 +91,19 @@
       color: #A08070;
       margin: 0;
       letter-spacing: 0.04em;
+    }
+
+    /* Bloque ayuda */
+    .help-block {
+      background-color: #F7F0EA;
+      border-radius: 4px;
+      padding: 20px 24px;
+      margin: 28px 0 0;
+      font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: #7A6358;
+      line-height: 1.65;
     }
 
     /* Producto en carrito */
@@ -237,12 +250,13 @@
       .signature        { padding: 4px 24px 28px !important; }
       .divider          { margin: 0 24px !important; }
       .footer           { padding: 20px 24px !important; }
+      .help-block       { padding: 16px 18px !important; }
     }
   </style>
 </head>
 <body>
 
-  <span class="preheader">no es un milagro. es constancia.</span>
+  <span class="preheader">gracias Laura 🤎</span>
 
   <div class="email-wrapper">
     <div class="email-container">
@@ -264,22 +278,29 @@
 
         <p class="body-text" style="margin:0 0 4px 0;">Hola bombón 🤎</p>
 
-        <p class="body-text">Esto nos escribió Laura hace unos días:</p>
+        <p class="body-text">
+          Tu Glow Mask sigue en el carrito.<br />
+          Y justo el otro día nos llegó esto:
+        </p>
 
         <!-- TESTIMONIAL -->
         <div class="testimonial-block">
           <p class="testimonial-text">
-            "Empecé sin expectativas muy altas. A las dos semanas noté que mi piel estaba más uniforme. A las cuatro, mi pareja me preguntó si había cambiado algo en mi rutina. No había cambiado nada más."
+            "Empecé sin darle demasiada importancia, la verdad. A las dos semanas notaba la piel mejor, más uniforme. Y al mes y medio, mis amigas me preguntaron si había cambiado mucho mi rutina. Y yo en plan… no, sigo haciendo lo mismo, pero con la máscara LED."
           </p>
           <p class="testimonial-author">— Laura</p>
         </div>
 
         <p class="body-text">
-          No es un milagro. Es lo que hace la luz roja cuando la usas de forma constante.
+          Nos gusta porque es bastante así.
         </p>
 
         <p class="body-text">
-          Si todavía tienes tu Glow Mask guardada, este es el momento.
+          No es algo que te cambie la piel de un día para otro. Pero llega un momento en el que se nota.
+        </p>
+
+        <p class="body-text">
+          Te admitimos que nuestra favorita es la luz roja, es como WOW si la usas con constancia ✨
         </p>
 
         <!-- PRODUCTO EN CARRITO -->
@@ -305,16 +326,20 @@
       <!-- BOTÓN CTA -->
       <div class="cta-wrap">
         <a href="{{ event.extra.checkout_url }}" class="cta-button" target="_blank">
-          Completar mi compra
+          Recuperar mi carrito
         </a>
-        <p style="margin:16px 0 0; font-family: Futura, 'Futura PT', 'Jost', Helvetica, Arial, sans-serif; font-size:12px; color:#A08070;">
-          O accede directamente: <a href="{{ event.extra.checkout_url }}" target="_blank" style="color:#5C3B30;">{{ event.extra.checkout_url }}</a>
-        </p>
+      </div>
+
+      <!-- BLOQUE AYUDA -->
+      <div style="padding:0 48px 8px;">
+        <div class="help-block">
+          Si te quedaba ese punto de duda, igual esto ayuda.
+        </div>
       </div>
 
       <!-- FIRMA -->
       <div class="signature">
-        <p class="signature-text">Con cariño,</p>
+        <p class="signature-text">Un abrazo,</p>
         <p class="signature-name">Irene M.</p>
         <p class="signature-role">Founder · Anelle Skin</p>
       </div>
